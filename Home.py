@@ -3,14 +3,6 @@ import leafmap.foliumap as leafmap
 
 st.set_page_config(layout="wide")
 
-st.sidebar.title("About")
-st.sidebar.info(
-    """
-    Web App URL: <https://geospatial.streamlitapp.com>
-    GitHub repository: <https://github.com/giswqs/streamlit-geospatial>
-    """
-)
-
 st.sidebar.title("Contact")
 st.sidebar.info(
     """
@@ -19,41 +11,31 @@ st.sidebar.info(
     """
 )
 
-st.sidebar.title("Support")
-st.sidebar.info(
-    """
-    If you want to reward my work, I'd love a cup of coffee from you. Thanks!
-    [buymeacoffee.com/giswqs](http://buymeacoffee.com/giswqs)
-    """
-)
 
 
-st.title("Streamlit for Geospatial Applications")
+st.title("Text to Image with NASA Biased Dataset")
 
 st.markdown(
     """
-    This multi-page web app demonstrates various interactive web apps created using [streamlit](https://streamlit.io) and open-source mapping libraries, 
-    such as [leafmap](https://leafmap.org), [geemap](https://geemap.org), [pydeck](https://deckgl.readthedocs.io), and [kepler.gl](https://docs.kepler.gl/docs/keplergl-jupyter).
-    This is an open-source project and you are very welcome to contribute your comments, questions, resources, and apps as [issues](https://github.com/giswqs/streamlit-geospatial/issues) or 
-    [pull requests](https://github.com/giswqs/streamlit-geospatial/pulls) to the [GitHub repository](https://github.com/giswqs/streamlit-geospatial).
+    In this web you can give a text input and have an image output, this is made via [Stable Diffusion](https://github.com/CompVis/stable-diffusion) with some modifications so the NASA dataset can be merged.
 
     """
 )
 
-st.info("Click on the left sidebar menu to navigate to the different apps.")
+st.info("Enter to the get Started Page.")
 
-st.subheader("Timelapse of Satellite Imagery")
+st.subheader("Examples of Images and their prompts")
 st.markdown(
     """
-    The following timelapse animations were created using the Timelapse web app. Click `Timelapse` on the left sidebar menu to create your own timelapse for any location around the globe.
-"""
+    The following images where genereted via the merged models of Stable Diffusion and NASA Dataset.
+    """
 )
 
 row1_col1, row1_col2 = st.columns(2)
 with row1_col1:
-    st.image("https://github.com/giswqs/data/raw/main/timelapse/spain.gif")
-    st.image("https://github.com/giswqs/data/raw/main/timelapse/las_vegas.gif")
+    st.image("https://64.media.tumblr.com/8817258bf5f20787e292180c2cffff6e/3ffb98050a7580c4-63/s540x810/713a25af57ff905b845e44d50f186271064aadeb.gifv")
+    st.image("https://preview.redd.it/hiii-everyone-i-made-a-local-deforum-stable-diffusion-ver-v0-xn1e7x9k9mn91.gif?width=480&auto=webp&s=38e34a2bb39c14a68304c18fb699d5e0817072a4")
 
 with row1_col2:
-    st.image("https://github.com/giswqs/data/raw/main/timelapse/goes.gif")
-    st.image("https://github.com/giswqs/data/raw/main/timelapse/fire.gif")
+    st.image("https://cdnb.artstation.com/p/assets/images/images/050/680/403/original/seedmole-seedmoleanimtest3.gif?1655410947")
+    st.image("https://c.tenor.com/0HG-oUyC45EAAAAC/magic-man-ai-art.gif")
